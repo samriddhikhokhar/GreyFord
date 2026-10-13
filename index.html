@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greyford Engineering | All Type of Engineering Solutions</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0c1726',
+                            900: '#070e17',
+                            950: '#04080e',
+                        },
+                        gold: {
+                            400: '#d4af37',
+                            500: '#c59b27',
+                            600: '#a37d1a',
+                        },
+                        cream: '#fcfbfa'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8f8f6;
+            color: #1a1a1a;
+        }
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(7, 14, 23, 0.88) 0%, rgba(7, 14, 23, 0.94) 100%),
+                        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .grid-pattern {
+            background-size: 24px 24px;
+            background-image: 
+                linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+        }
+        .warranty-circle {
+            background: radial-gradient(circle, #c59b27 0%, #8c6a11 100%);
+            box-shadow: 0 0 25px rgba(197, 155, 39, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-[#f8f8f6] text-gray-900 antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- Header Navigation -->
+    <header class="bg-navy-900 border-b border-navy-800 text-white sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 bg-navy-800 border border-gold-500/40 flex items-center justify-center font-bold text-gold-400 rounded transition group-hover:border-gold-400">
+                    <svg class="w-6 h-6 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0h4m-4 0V11m0 0h4"></path>
+                    </svg>
+                </div>
+                <div>
+                    <span class="block font-black text-lg tracking-wider uppercase leading-none text-white">GREYFORD</span>
+                    <span class="block font-semibold text-[10px] tracking-[0.25em] text-gray-400 uppercase mt-0.5">ENGINEERING</span>
+                </div>
+            </a>
+
+            <!-- CTA Button -->
+            <a href="#quote-form" class="bg-transparent hover:bg-white/10 text-white border border-gray-400 font-bold text-xs tracking-wider uppercase px-4 sm:px-6 py-2.5 rounded-sm transition flex items-center gap-2">
+                REQUEST A CALL
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-overlay text-white py-16 sm:py-24 px-4 sm:px-6 relative">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <span class="inline-block text-xs font-bold tracking-[0.2em] text-gold-400 uppercase">
+                GREYFORD ENGINEERING
+            </span>
+            
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight uppercase">
+                ALL TYPE OF ENGINEERING SOLUTIONS
+            </h1>
+
+            <p class="text-gold-400 font-semibold text-sm sm:text-base tracking-widest uppercase">
+                WE BUILD TRUST, NOT A BUILDING.
+            </p>
+
+            <p class="text-gray-300 text-sm sm:text-base leading-relaxed max-w-2xl font-normal">
+                A disciplined approach to construction, from first drawings to final handover—built around precision, integrity and enduring performance.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="pt-4 flex flex-col sm:flex-row gap-3">
+                <a href="#quote-form" class="bg-gold-500 hover:bg-gold-600 text-navy-950 font-extrabold text-xs tracking-wider uppercase px-6 py-3.5 rounded-sm transition flex items-center justify-center gap-2">
+                    REQUEST A CALL <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+                </a>
+                <a href="#what-we-build" class="bg-navy-800/80 hover:bg-navy-800 text-white border border-gray-600 font-bold text-xs tracking-wider uppercase px-6 py-3.5 rounded-sm transition text-center">
+                    VIEW OUR SERVICES
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features & Quality Commitments -->
+    <section class="py-12 bg-[#f8f8f6] grid-pattern border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 space-y-6">
+            
+            <!-- Quality Commitment Card -->
+            <div class="bg-white border border-gray-200 p-6 rounded-sm shadow-sm">
+                <div class="flex items-start gap-3">
+                    <div class="w-6 h-6 rounded-full border border-gold-500 text-gold-500 flex items-center justify-center text-xs shrink-0 mt-0.5">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-extrabold text-navy-900 tracking-wider text-base uppercase">QUALITY COMMITMENT</h3>
+                        <p class="text-gray-600 text-sm mt-1">Every detail is guided by rigorous workmanship standards.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Party Tested Card -->
+            <div class="bg-white border border-gray-200 p-6 rounded-sm shadow-sm">
+                <div class="flex items-start gap-3">
+                    <div class="w-6 h-6 rounded-full border border-gold-500 text-gold-500 flex items-center justify-center text-xs shrink-0 mt-0.5">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-extrabold text-navy-900 tracking-wider text-base uppercase">THIRD-PARTY TESTED</h3>
+                        <p class="text-gray-600 text-sm mt-1">Materials and methods are independently verified for confidence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 Year Leakage Warranty Circular Badge -->
+            <div class="bg-white border border-gray-200 p-8 rounded-sm shadow-sm text-center flex flex-col items-center">
+                <div class="w-36 h-36 rounded-full warranty-circle text-navy-950 flex flex-col items-center justify-center border-4 border-navy-900 shadow-lg my-2">
+                    <span class="text-xl font-extrabold leading-none">5 YEAR</span>
+                    <span class="text-[11px] font-black tracking-wider uppercase mt-1">LEAKAGE</span>
+                    <span class="text-[10px] font-black tracking-wider uppercase">WARRANTY</span>
+                </div>
+                <h4 class="text-xs font-black tracking-[0.2em] text-navy-900 uppercase mt-4">BUILT TO STAY PROTECTED</h4>
+            </div>
+
+            <!-- No Compromise Card -->
+            <div class="bg-white border border-gray-200 p-6 rounded-sm shadow-sm">
+                <div class="flex items-start gap-3">
+                    <div class="w-7 h-7 text-gold-500 flex items-center justify-center text-lg shrink-0">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-extrabold text-navy-900 tracking-wider text-base uppercase">NO COMPROMISE WITH MATERIAL</h3>
+                        <p class="text-gray-600 text-sm mt-1">Only high quality, specification-led materials make the cut.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- On-Time Delivery Card -->
+            <div class="bg-white border border-gray-200 p-6 rounded-sm shadow-sm">
+                <div class="flex items-start gap-3">
+                    <div class="w-7 h-7 text-gold-500 flex items-center justify-center text-lg shrink-0">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-extrabold text-navy-900 tracking-wider text-base uppercase">ON-TIME DELIVERY</h3>
+                        <p class="text-gray-600 text-sm mt-1">Clear planning keeps work moving with purpose and pace.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Highlights Box -->
+            <div class="bg-white border border-gray-200 p-6 rounded-sm shadow-sm space-y-4">
+                <div class="flex items-center gap-3 text-sm font-bold text-navy-900">
+                    <i class="far fa-envelope text-gold-500"></i>
+                    <span class="uppercase tracking-wider">LOW BUDGET SOLUTIONS</span>
+                </div>
+                <div class="flex items-center gap-3 text-sm font-bold text-navy-900">
+                    <i class="fas fa-gem text-gold-500"></i>
+                    <span class="uppercase tracking-wider">HIGH QUALITY EXECUTION</span>
+                </div>
+                <div class="flex items-center gap-3 text-sm font-bold text-navy-900">
+                    <i class="far fa-clock text-gold-500"></i>
+                    <span class="uppercase tracking-wider">ON TIME, EVERY TIME</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services Section (WHAT WE BUILD) -->
+    <section id="what-we-build" class="py-16 bg-[#f8f8f6]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            
+            <div class="mb-8">
+                <span class="text-xs font-bold tracking-[0.2em] text-gold-600 uppercase block mb-1">WHAT WE BUILD</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-navy-900 leading-tight">
+                    Engineering capability, shaped around your ambition.
+                </h2>
+                <p class="text-gray-600 text-sm mt-2">
+                    We bring technical clarity, dependable teams and a premium finish to projects of every scale.
+                </p>
+            </div>
+
+            <!-- Services Stack -->
+            <div class="space-y-4">
+                
+                <!-- Service 01: Residential -->
+                <div class="bg-white border border-gray-200 p-6 rounded-sm shadow-sm relative group hover:border-gold-500 transition">
+                    <span class="absolute top-6 right-6 text-gold-500 font-extrabold text-sm">01</span>
+                    <div class="w-10 h-10 bg-gray-50 border border-gray-200 rounded flex items-center justify-center text-gray-700 mb-4">
+                        <i class="fas fa-home text-base"></i>
+                    </div>
+                    <h3 class="font-extrabold text-navy-900 text-lg uppercase tracking-wider">RESIDENTIAL CONSTRUCTION</h3>
+                    <p class="text-gray-600 text-sm mt-2">
+                        Thoughtfully engineered homes that balance lasting comfort with architectural character.
+                    </p>
+                    <a href="#quote-form" class="inline-flex items-center gap-2 text-xs font-extrabold text-navy-900 tracking-wider uppercase mt-4 hover:text-gold-600">
+                        LEARN MORE <span class="text-gold-500">+</span>
+                    </a>
+                </div>
+
+                <!-- Service 02: Commercial -->
+                <div class="bg-white border border-gray-200 p-6 rounded-sm shadow-sm relative group hover:border-gold-500 transition">
+                    <span class="absolute top-6 right-6 text-gold-500 font-extrabold text-sm">02</span>
+                    <div class="w-10 h-10 bg-gray-50 border border-gray-200 rounded flex items-center justify-center text-gray-700 mb-4">
+                        <i class="fas fa-building text-base"></i>
+                    </div>
+                    <h3 class="font-extrabold text-navy-900 text-lg uppercase tracking-wider">COMMERCIAL CONSTRUCTION</h3>
+                    <p class="text-gray-600 text-sm mt-2">
+                        Future-ready workplaces and retail environments built for performance and presence.
+                    </p>
+                    <a href="#quote-form" class="inline-flex items-center gap-2 text-xs font-extrabold text-navy-900 tracking-wider uppercase mt-4 hover:text-gold-600">
+                        LEARN MORE <span class="text-gold-500">+</span>
+                    </a>
+                </div>
+
+                <!-- Service 03: Industrial -->
+                <div class="bg-white border border-gray-200 p-6 rounded-sm shadow-sm relative group hover:border-gold-500 transition">
+                    <span class="absolute top-6 right-6 text-gold-500 font-extrabold text-sm">03</span>
+                    <div class="w-10 h-10 bg-gray-50 border border-gray-200 rounded flex items-center justify-center text-gray-700 mb-4">
+                        <i class="fas fa-industry text-base"></i>
+                    </div>
+                    <h3 class="font-extrabold text-navy-900 text-lg uppercase tracking-wider">INDUSTRIAL CONSTRUCTION</h3>
+                    <p class="text-gray-600 text-sm mt-2">
+                        Robust, compliant facilities designed around operational efficiency and safety.
+                    </p>
+                    <a href="#quote-form" class="inline-flex items-center gap-2 text-xs font-extrabold text-navy-900 tracking-wider uppercase mt-4 hover:text-gold-600">
+                        LEARN MORE <span class="text-gold-500">+</span>
+                    </a>
+                </div>
+
+                <!-- Service 04: Restoration -->
+                <div class="bg-white border border-gray-200 p-6 rounded-sm shadow-sm relative group hover:border-gold-500 transition">
+                    <span class="absolute top-6 right-6 text-gold-500 font-extrabold text-sm">04</span>
+                    <div class="w-10 h-10 bg-gray-50 border border-gray-200 rounded flex items-center justify-center text-gray-700 mb-4">
+                        <i class="fas fa-wrench text-base"></i>
+                    </div>
+                    <h3 class="font-extrabold text-navy-900 text-lg uppercase tracking-wider">RESTORATION & RENOVATION</h3>
+                    <p class="text-gray-600 text-sm mt-2">
+                        Strategic upgrades that renew existing spaces without compromising their integrity.
+                    </p>
+                    <a href="#quote-form" class="inline-flex items-center gap-2 text-xs font-extrabold text-navy-900 tracking-wider uppercase mt-4 hover:text-gold-600">
+                        LEARN MORE <span class="text-gold-500">+</span>
+                    </a>
+                </div>
+
+                <!-- Service 05: Project Planning -->
+                <div class="bg-white border border-gray-200 p-6 rounded-sm shadow-sm relative group hover:border-gold-500 transition">
+                    <span class="absolute top-6 right-6 text-gold-500 font-extrabold text-sm">05</span>
+                    <div class="w-10 h-10 bg-gray-50 border border-gray-200 rounded flex items-center justify-center text-gray-700 mb-4">
+                        <i class="fas fa-drafting-compass text-base"></i>
+                    </div>
+                    <h3 class="font-extrabold text-navy-900 text-lg uppercase tracking-wider">PROJECT PLANNING & ESTIMATION</h3>
+                    <p class="text-gray-600 text-sm mt-2">
+                        A project starts with certainty. We create practical roadmaps, cost clarity and realistic milestones before work begins.
+                    </p>
+                    <a href="#quote-form" class="inline-flex items-center gap-2 text-xs font-extrabold text-navy-900 tracking-wider uppercase mt-4 hover:text-gold-600">
+                        LEARN MORE <span class="text-gold-500">+</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- The Greyford Method (Process Section) -->
+    <section class="py-16 bg-navy-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <span class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase block mb-1">THE GREYFORD METHOD</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold mb-3">
+                Built with a process that leaves nothing to chance.
+            </h2>
+            <p class="text-gray-400 text-sm mb-10 border-b border-gray-800 pb-8">
+                A transparent working relationship from the first discussion to the final inspection.
+            </p>
+
+            <!-- Steps List -->
+            <div class="space-y-8">
+                <!-- Step 1 -->
+                <div class="flex items-start gap-6">
+                    <span class="text-4xl font-extrabold text-gray-500 leading-none">01</span>
+                    <div>
+                        <h3 class="text-lg font-extrabold uppercase tracking-wider text-white">DISCOVER</h3>
+                        <p class="text-gray-400 text-sm mt-1">We understand the site, brief, ambitions and budget.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex items-start gap-6">
+                    <span class="text-4xl font-extrabold text-gray-500 leading-none">02</span>
+                    <div>
+                        <h3 class="text-lg font-extrabold uppercase tracking-wider text-white">PLAN</h3>
+                        <p class="text-gray-400 text-sm mt-1">We shape the technical scope, sequence and estimate.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex items-start gap-6">
+                    <span class="text-4xl font-extrabold text-gray-500 leading-none">03</span>
+                    <div>
+                        <h3 class="text-lg font-extrabold uppercase tracking-wider text-white">BUILD</h3>
+                        <p class="text-gray-400 text-sm mt-1">Our teams execute with quality control at every stage.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex items-start gap-6">
+                    <span class="text-4xl font-extrabold text-gray-500 leading-none">04</span>
+                    <div>
+                        <h3 class="text-lg font-extrabold uppercase tracking-wider text-white">HAND OVER</h3>
+                        <p class="text-gray-400 text-sm mt-1">We finish with inspections, assurance and accountability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start a Conversation & Quote Form -->
+    <section id="quote-form" class="py-16 bg-[#f8f8f6]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 space-y-12">
+            
+            <!-- Start a Conversation Box -->
+            <div class="bg-navy-900 text-white p-8 rounded-sm shadow-lg space-y-6">
+                <div>
+                    <span class="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase block mb-1">START A CONVERSATION</span>
+                    <h2 class="text-xl sm:text-2xl font-black uppercase text-white tracking-wide">WE BUILD TRUST, NOT A BUILDING.</h2>
+                    <p class="text-gray-300 text-sm mt-2">
+                        Tell us what you are planning. Our leadership team will help turn a clear vision into a confident next step.
+                    </p>
+                </div>
+
+                <!-- Contacts -->
+                <div class="space-y-3 pt-2">
+                    <!-- Kunal -->
+                    <a href="tel:9285228838" class="block bg-navy-800 hover:bg-navy-950 border border-gray-700 p-4 rounded-sm transition">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-phone text-gold-400 text-sm"></i>
+                            <div>
+                                <h4 class="font-extrabold text-white text-sm uppercase tracking-wider">KUNAL RATHORE</h4>
+                                <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest block">PROJECT CONSULTATION • 9285228838</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Himanshu -->
+                    <a href="tel:7024199370" class="block bg-navy-800 hover:bg-navy-950 border border-gray-700 p-4 rounded-sm transition">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-phone text-gold-400 text-sm"></i>
+                            <div>
+                                <h4 class="font-extrabold text-white text-sm uppercase tracking-wider">HIMANSHU NAKWAL</h4>
+                                <span class="text-xs font-semibold text-gray-400 uppercase tracking-widest block">PROJECT CONSULTATION • 7024199370</span>
+                            </div>
+                        </div>
+                    </a>
+                </div> 
+            </div>
+
+            <!-- Request A Quote Form -->
+            <div class="bg-white border border-gray-200 p-8 rounded-sm shadow-sm">
+                <span class="text-xs font-bold tracking-[0.2em] text-gold-600 uppercase block mb-1">CONTACT US</span>
+                <h3 class="text-xl sm:text-2xl font-extrabold text-navy-900 mb-2">Bring your project into focus.</h3>
+                <p class="text-gray-600 text-sm mb-6">
+                    Share a few details and Greyford Engineering will be in touch to discuss your requirements.
+                </p>
+
+                <form onsubmit="handleQuoteSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-extrabold uppercase tracking-wider text-navy-900 mb-1">YOUR NAME</label>
+                        <input type="text" required class="w-full bg-gray-50 border border-gray-300 p-3 rounded-sm text-sm focus:outline-none focus:border-navy-900">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-extrabold uppercase tracking-wider text-navy-900 mb-1">EMAIL ADDRESS</label>
+                        <input type="email" required class="w-full bg-gray-50 border border-gray-300 p-3 rounded-sm text-sm focus:outline-none focus:border-navy-900">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-extrabold uppercase tracking-wider text-navy-900 mb-1">TELL US ABOUT YOUR PROJECT</label>
+                        <textarea rows="4" required class="w-full bg-gray-50 border border-gray-300 p-3 rounded-sm text-sm focus:outline-none focus:border-navy-900"></textarea>
+                    </div>
+
+                    <button type="submit" class="bg-navy-900 hover:bg-gold-500 text-white hover:text-navy-950 font-bold text-xs tracking-widest uppercase px-6 py-3.5 rounded-sm transition flex items-center gap-2">
+                        SEND MESSAGE <i class="fas fa-paper-plane text-xs"></i>
+                    </button>
+                </form>
+
+                <div id="successMsg" class="hidden mt-4 p-4 bg-green-50 border border-green-200 text-green-800 text-sm rounded-sm font-medium">
+                    <i class="fas fa-check-circle text-green-600 mr-2"></i> Your message has been received! We will reach out shortly.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-white border-t border-gray-800 py-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 space-y-4">
+            <h4 class="font-extrabold text-sm tracking-wider uppercase">GREYFORD ENGINEERING</h4>
+            <p class="text-xs text-gray-400">
+                No compromise with material — use high quality material, third party tested.
+            </p>
+            
+            <div class="flex items-center gap-3 pt-2 text-gray-400 text-sm">
+                <a href="#" class="w-8 h-8 rounded bg-navy-900 border border-gray-800 flex items-center justify-center hover:text-gold-400"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="w-8 h-8 rounded bg-navy-900 border border-gray-800 flex items-center justify-center hover:text-gold-400"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="w-8 h-8 rounded bg-navy-900 border border-gray-800 flex items-center justify-center hover:text-gold-400"><i class="fab fa-facebook-f"></i></a>
+            </div>
+
+            <div class="pt-6 border-t border-gray-800 text-[11px] text-gray-500">
+                © <span id="currentYear"></span> Greyford Engineering. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        function handleQuoteSubmit(e) {
+            e.preventDefault();
+            const msg = document.getElementById('successMsg');
+            msg.classList.remove('hidden');
+            e.target.reset();
+            setTimeout(() => {
+                msg.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
